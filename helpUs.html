@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planète Verte - Soutenez-Nous</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/leaf.png" alt="Logo Planète Verte">
+            <h1>Planète Verte</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Nos Projets</a></li>
+            <li><a href="education.html">Éducation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="helpUs.html">Soutenez-Nous</a></li>
+        </ul>
+        
+        <div class="small_menu">
+            <span>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+    </header>
+
+    <!-- Soutenez-Nous Section -->
+    <section class="support">
+        <div class="container">
+            <h1 class="title">Soutenez-Nous</h1>
+            <p class="description">Faites partie du changement en soutenant nos initiatives écologiques et éducatives. Chaque geste compte pour un avenir plus vert.</p>
+
+            <div class="ways-to-support">
+                <h2>Comment Vous Pouvez Nous Aider</h2>
+                <div class="support-method">
+                    <div class="support-image">
+                        <img src="images/Donations.jpg" alt="Donations">
+                    </div>
+                    <h3>Faire un Don</h3>
+                    <p>Contribuez financièrement pour soutenir nos projets éducatifs, environnementaux et de sensibilisation.</p>
+                    <button class="button-link">
+                        <a href="contact.html">Faire un Don</a>
+                    </button>
+                </div>
+
+                <div class="support-method">
+                    <div class="support-image">
+                        <img src="images/Volunteering.jpg" alt="Volunteering">
+                    </div>
+                    <h3>Devenir Bénévole</h3>
+                    <p>Participez à nos activités de sensibilisation sur le terrain et dans nos programmes de formation.</p>
+                    <button class="button-link">
+                        <a href="inscription.html">Inscription Bénévolat</a>
+                    </button>
+                </div>
+
+                <div class="support-method">
+                    <div class="support-image">
+                        <img src="images/Partner with us.jpg" alt="Partner with us">
+                    </div>
+                    <h3>Devenir Partenaire</h3>
+                    <p>Rejoignez-nous en tant que partenaire pour renforcer l’impact de nos actions sur le terrain.</p>
+                    <button class="button-link">
+                        <a href="contact.html">Devenir Partenaire</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="impact-stats">
+                <h2>Votre Soutien Fait la Différence</h2>
+                <div class="impact-numbers">
+                    <div class="impact-item">
+                        <h3>+10 000</h3>
+                        <p>Personnes Impactées</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>300</h3>
+                        <p>Projets Financiers Soutenus</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>500</h3>
+                        <p>Bénévoles Actifs</p>
+                    </div>
+                </div>
+                <p class="additional-info">Votre engagement change des vies et contribue à un avenir plus durable pour tous.</p>
+            </div>
+
+            <div class="cta">
+                <h2>Prêt à Faire Une Différence ?</h2>
+                <p>Faites partie du changement et contribuez à protéger notre planète pour les générations futures.</p>
+                <button class="button-link">
+                    <a href="inscription.html">Rejoignez-Nous</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site réalisé par Mansa | Tous les droits sont réservés. | <a href="#">Politique de Confidentialité</a></p>
+    </footer>
+
+    <script>
+        var small_menu = document.querySelector(".small_menu");
+        var menu = document.querySelector(".menu");
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('small');
+        }
+    </script>
+</body>
+</html>

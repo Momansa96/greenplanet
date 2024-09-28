@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planète Verte - Éducation Écologique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/leaf.png" alt="Logo Planète Verte">
+            <h1>Planète Verte</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Nos Projets</a></li>
+            <li><a href="education.html">Éducation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="helpUs.html">Soutenez-Nous</a></li>
+        </ul>
+        <div class="small_menu">
+            <span>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+    </header>
+
+    <!-- Éducation Section -->
+    <section class="education">
+        <div class="container">
+            <h1 class="title">Éducation Écologique</h1>
+            <p class="description">Éduquer pour un avenir durable : Ensemble, transformons notre manière de penser et d'agir pour notre planète.</p>
+
+            <div class="programs">
+                <h2>Nos Programmes</h2>
+                <div class="program">
+                    <div class="program-image">
+                        <img src="images/Ateliers Scolaires.jpg" alt="Ateliers Scolaires">
+                    </div>
+                    <h3>Ateliers Scolaires</h3>
+                    <p>Ateliers interactifs pour sensibiliser les enfants au recyclage et à la protection de l'environnement.</p>
+                </div>
+                <div class="program">
+                    <div class="program-image">
+                        <img src="images/Formations pour Adultes.jpg" alt="Formations pour Adultes">
+                    </div>
+                    <h3>Formations pour Adultes</h3>
+                    <p>Sessions de formation sur les pratiques durables et l'économie circulaire.</p>
+                </div>
+                <div class="program">
+                    <div class="program-image">
+                        <img src="images/Webinaires en Ligne.jpg" alt="Webinaires en Ligne">
+                    </div>
+                    <h3>Webinaires en Ligne</h3>
+                    <p>Des webinaires pour aborder le changement climatique et la réduction des déchets.</p>
+                </div>
+                <div class="program">
+                    <div class="program-image">
+                        <img src="images/Visites Éducatives.jpg" alt="Visites Éducatives">
+                    </div>
+                    <h3>Visites Éducatives</h3>
+                    <p>Organisation de visites dans des centres de recyclage pour une expérience d'apprentissage pratique.</p>
+                </div>
+            </div>
+
+            <div class="impact-section">
+                <h2>Impact de nos Initiatives</h2>
+                <p>Nos efforts ont touché plus de 10 000 personnes. Voici quelques résultats marquants :</p>
+                <div class="impact-numbers">
+                    <div class="impact-item">
+                        <h3>+5 000</h3>
+                        <p>Élèves sensibilisés</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>200</h3>
+                        <p>Ateliers organisés</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>1 500</h3>
+                        <p>Adultes formés</p>
+                    </div>
+                </div>
+                <p class="additional-info">Chaque initiative compte, et ensemble, nous faisons la différence !</p>
+            </div>
+            
+
+            <div class="cta">
+                <h2>Participez à notre Élan Éducatif!</h2>
+                <p>Inscrivez-vous pour faire une différence et contribuer à un avenir durable.</p>
+                <button class="button-link">
+                    <a href="inscription.html">Inscrivez-vous</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site réalisé par Mansa | Tous les droits sont réservés. | <a href="#">Politique de Confidentialité</a></p>
+    </footer>
+
+    <script>
+        var small_menu = document.querySelector(".small_menu");
+        var menu = document.querySelector(".menu");
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('small');
+        }
+    </script>
+</body>
+</html>

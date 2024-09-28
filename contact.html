@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planète Verte - Contactez-Nous</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/leaf.png" alt="Logo Planète Verte">
+            <h1>Planète Verte</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Nos Projets</a></li>
+            <li><a href="education.html">Éducation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="helpUs.html">Soutenez-Nous</a></li>
+        </ul>
+        
+        <div class="small_menu">
+            <span>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h1 class="title">Contactez-Nous</h1>
+            <p class="description">Nous sommes là pour répondre à toutes vos questions concernant nos projets ou nos initiatives. N’hésitez pas à nous contacter !</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="images/Location Icon.jpg" alt="Location Icon">
+                    <h3>Adresse</h3>
+                    <p>123 Rue Verte, Quartier Écologique, Cotonou, Bénin</p>
+                </div>
+                <div class="contact-item">
+                    <img src="images/Email Icon.jpg" alt="Email Icon">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@planeteverte.org">contact@planeteverte.org</a></p>
+                </div>
+                <div class="contact-item">
+                    <img src="images/Phone Icon.avif" alt="Phone Icon">
+                    <h3>Téléphone</h3>
+                    <p>+7(999) 999 999</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button-link">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site réalisé par Mansa | Tous les droits sont réservés. | <a href="#">Politique de Confidentialité</a></p>
+    </footer>
+
+    <script>
+        var small_menu = document.querySelector(".small_menu");
+        var menu = document.querySelector(".menu");
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('small');
+        }
+    </script>
+</body>
+</html>
